@@ -5,13 +5,14 @@ body {
   margin: 0px;
 }
 .navbar {
-  background-color: #ff8861;
+  background-color: #fff8f4;
   display: flex;
   justify-content: space-between;
   padding: 5px 50px;
+  box-shadow: 0 2px 4px 0 #cacaca;
 }
 .logo {
-  color: #fff8f4;
+  color: #ff8861;
   font-size: 23px;
 }
 .menu-icon {
@@ -24,12 +25,13 @@ body {
 .bar3 {
   width: 30px;
   height: 3px;
-  background-color: #fff8f4;
+  background-color: #ff8861;
   margin: 6px 0;
 }
 
 .container-1 {
   margin: 20px;
+  display: flex;
 }
 .img-container {
   height: 400px;
@@ -48,7 +50,13 @@ body {
   font-size: 26px;
   color: #ff8861;
 }
+.headers-container {
+  min-width: 300px;
+  /* width: 60%; */
+}
 .container-2 {
+  /* width: 35%; */
+  min-width: 300px;
   margin: 20px;
 }
 .headline-2 {
@@ -121,4 +129,10 @@ body {
 .button:hover {
   background-color: #ff8861;
   color: #fff8f4;
+}
+@media (max-width: 768px) {
+  .container-1 {
+    display: block;
+    padding: 10px;
+  }
 }
